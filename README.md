@@ -43,7 +43,7 @@ python main.py
 `main.py` starts data collection, audio downloading, transcription, text cleanup, and database initialization in parallel. Some processes run continuously. Press `Ctrl+C` to stop the system.
 
 ---
-#與情分析系統
+# 與情分析系統
 
 這是一套新聞與影音輿情自動化處理系統，可抓取新聞來源、下載音訊、使用 Whisper 進行語音轉文字、透過可設定的 LLM 清理內容，最後將結果寫入 MySQL。
 
