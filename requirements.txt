@@ -1,0 +1,19 @@
+# HTTP requests and HTML parsing
+requests>=2.32,<3
+beautifulsoup4>=4.13,<5
+
+# Configuration
+python-dotenv>=1.1,<2
+
+# Data processing
+pandas>=2.2,<4
+
+# MySQL
+mysql-connector-python>=9.3,<10
+
+# Browser automation. Selenium Manager automatically installs a compatible
+# browser driver and supports SE_SKIP_DRIVER_IN_PATH.
+selenium>=4.46,<5
+
+# Cross-process lock used by whisper_setup.py
+portalocker>=3.2,<4
