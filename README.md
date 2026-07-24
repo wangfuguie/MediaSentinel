@@ -2,6 +2,14 @@
 
 This project collects news and video sources, downloads audio, transcribes speech with Whisper, cleans text with a configurable LLM, and stores the results in MySQL.
 
+```mermaid
+flowchart LR
+    A[News / Video Source] --> B[Scrape URL]
+    B --> C[Download & Convert to WAV]
+    C --> D[Whisper Speech Transcription]
+    D --> E[LLM Text Cleaning]
+    E --> F[MySQL]
+```
 ## Steps
 
 ### 1. Configure environment variables
@@ -47,16 +55,6 @@ python main.py
 
 這是一套新聞與影音輿情自動化處理系統，可抓取新聞來源、下載音訊、使用 Whisper 進行語音轉文字、透過可設定的 LLM 清理內容，最後將結果寫入 MySQL。
 
-## 系統流程
-
-```mermaid
-flowchart LR
-    A[新聞／影音來源] --> B[抓取 URL]
-    B --> C[下載並轉換 WAV]
-    C --> D[Whisper 語音轉錄]
-    D --> E[LLM 文字清理]
-    E --> F[MySQL]
-```
 
 ## 操作步驟
 
